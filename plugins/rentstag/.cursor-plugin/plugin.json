@@ -1,7 +1,7 @@
 {
   "name": "rentstag",
   "displayName": "Rentstag",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minClientVersions": {
     "cursor": "3.13.0"
   },
@@ -17,6 +17,5 @@
   "keywords": ["rentstag", "mcp", "property", "portfolio", "real-estate", "occupancy"],
   "category": "integrations",
   "tags": ["rentstag", "mcp", "property", "portfolio"],
-  "skills": "./skills/",
   "mcpServers": "./mcp.json"
 }

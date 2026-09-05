@@ -1,23 +1,16 @@
 # Changelog
 
-All notable changes to this plugin will be documented here.
+All notable changes to this repository will be documented here.
+
+## 1.0.2
+
+- Cursor GitHub install uses a marketplace manifest (`plugins/rentstag`), which is what Add from GitHub expects.
+- Root README and `server.json` cover Cursor, Claude, ChatGPT, and other Streamable HTTP clients.
 
 ## 1.0.1
 
-- Logo is the Rentstag symbol (`assets/logo.png`).
+- Logo is the Rentstag symbol (`plugins/rentstag/assets/logo.png`).
 
-## 1.0.0 — marketplace-ready packaging
+## 1.0.0
 
-- Manifest matches the Cursor plugin schema: `displayName`, `category`, `tags`, `minClientVersions`, `skills`, and `mcpServers`.
-- MCP config declares `type: "http"` against `https://mcp.rentstag.com`.
-- Logo is the Rentstag product mark on a padded white tile.
-- Added MIT `LICENSE` and this changelog.
-
-## 0.1.1
-
-- Added import, export, and troubleshoot skills (user-facing MCP guidance only).
-
-## 0.1.0 — initial release
-
-- Added the `rentstag` MCP server pointing at `https://mcp.rentstag.com`.
-- Auth is WorkOS sign-in, not an API key.
+- Hosted MCP at `https://mcp.rentstag.com`. Auth is WorkOS sign-in, not an API key.

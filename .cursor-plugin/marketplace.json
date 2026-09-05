@@ -1,0 +1,17 @@
+{
+  "name": "rentstag",
+  "owner": {
+    "name": "Rentstag",
+    "email": "michal@rentstag.com"
+  },
+  "metadata": {
+    "description": "Rentstag MCP for occupancy, buildings, units, contracts, and rent."
+  },
+  "plugins": [
+    {
+      "name": "rentstag",
+      "source": "plugins/rentstag",
+      "description": "Ask Rentstag about occupancy, buildings, units, contracts, and rent."
+    }
+  ]
+}

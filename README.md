@@ -1,18 +1,19 @@
-# Rentstag
+# Rentstag MCP
 
-Cursor plugin that connects agents to [Rentstag](https://rentstag.com) through Rentstag's remote [Model Context Protocol](https://modelcontextprotocol.io/) server.
+Hosted [Model Context Protocol](https://modelcontextprotocol.io/) server for occupancy, buildings, units, contracts, and rent.
 
-Ask about occupancy, buildings, units, contracts, and rent in the signed-in organisation. Import a pasted spreadsheet, export a read-only portfolio snapshot, or diagnose tool and permission failures.
+**URL:** `https://mcp.rentstag.com`
 
-## Install
+Sign in with WorkOS when the client opens a browser. There is no API key.
 
-1. Open **Cursor Settings → Plugins**.
-2. **Add from GitHub** and enter `RENTSTAG/mcp`.
-3. Click **Install**, then complete the WorkOS sign-in prompt.
+## Cursor
 
-After the plugin is listed in the Cursor Marketplace, you can also search for **Rentstag** or run `/add-plugin rentstag` in chat.
+1. Settings → **Plugins**
+2. **Add from GitHub**
+3. `RENTSTAG/mcp`
+4. Install **Rentstag**, then complete sign-in
 
-## MCP
+Or add the URL in Settings → **MCP**:
 
 ```json
 {
@@ -25,25 +26,36 @@ After the plugin is listed in the Cursor Marketplace, you can also search for **
 }
 ```
 
-Auth is OAuth 2.0 against WorkOS AuthKit. Cursor prompts for sign-in when the plugin connects. There is no API key.
+## Claude
 
-## Skills
+**Claude.ai:** Settings → Connectors → Add custom MCP → `https://mcp.rentstag.com`
 
-Cursor loads these with the plugin:
+**Claude Code / Desktop:**
 
-| Skill | When |
-| --- | --- |
-| `rentstag-portfolio` | Any Rentstag MCP work — session first, no guessed writes |
-| `rentstag-import-portfolio` | Pasted spreadsheet, CSV, or JSON into Manage |
-| `rentstag-export-portfolio` | Read-only snapshot of buildings, units, contracts, and rent |
-| `rentstag-troubleshoot` | Tool failures, OAuth, occupancy or rent looking wrong |
+```json
+{
+  "mcpServers": {
+    "rentstag": {
+      "type": "http",
+      "url": "https://mcp.rentstag.com"
+    }
+  }
+}
+```
 
-## Docs
+## ChatGPT
 
-- Product: https://rentstag.com
-- Plugin source: https://github.com/RENTSTAG/mcp
+Developer Mode → MCP → add `https://mcp.rentstag.com` → complete sign-in.
 
-Logo is the Rentstag symbol (`assets/logo.png`).
+## Other MCP clients
+
+Use Streamable HTTP at `https://mcp.rentstag.com`. Server card: [`server.json`](./server.json) and `https://mcp.rentstag.com/.well-known/mcp.json`.
+
+## What you can ask
+
+Occupancy, buildings, units, contracts, and rent in the signed-in organisation. Import a pasted spreadsheet. Export a read-only portfolio snapshot.
+
+Writes need an explicit yes. Viewers can read and analyse; members can commit.
 
 ## License
 

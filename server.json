@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "rentstag/mcp",
+  "title": "Rentstag",
+  "description": "Ask Rentstag about occupancy, buildings, units, contracts, and rent.",
+  "version": "1.0.2",
+  "websiteUrl": "https://rentstag.com",
+  "repository": {
+    "url": "https://github.com/RENTSTAG/mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.rentstag.com"
+    }
+  ]
+}
