@@ -43,7 +43,7 @@ Cursor loads these with the plugin:
 - Product: https://rentstag.com
 - Plugin source: https://github.com/RENTSTAG/mcp
 
-Logo is the Rentstag product mark from https://rentstag.com, placed on a white tile with padding so it reads well in the Cursor UI.
+Logo is the Rentstag symbol (`assets/logo.png`).
 
 ## License
 

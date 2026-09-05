@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.1
+
+- Logo is the Rentstag symbol (`assets/logo.png`).
+
 ## 1.0.0 — marketplace-ready packaging
 
 - Manifest matches the Cursor plugin schema: `displayName`, `category`, `tags`, `minClientVersions`, `skills`, and `mcpServers`.
