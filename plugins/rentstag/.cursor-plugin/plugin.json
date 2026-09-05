@@ -11,7 +11,7 @@
     "email": "michal@rentstag.com"
   },
   "homepage": "https://rentstag.com",
-  "repository": "https://github.com/RENTSTAG/mcp",
+  "repository": "https://github.com/RENTSTAG/plugin",
   "license": "MIT",
   "logo": "assets/logo.svg",
   "keywords": ["rentstag", "mcp", "property", "portfolio", "real-estate", "occupancy"],

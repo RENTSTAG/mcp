@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "websiteUrl": "https://rentstag.com",
   "repository": {
-    "url": "https://github.com/RENTSTAG/mcp",
+    "url": "https://github.com/RENTSTAG/plugin",
     "source": "github"
   },
   "remotes": [
