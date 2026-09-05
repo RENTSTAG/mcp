@@ -7,7 +7,7 @@ Occupancy, buildings, units, contracts, and rent. Open your client, install the 
 
 1. Settings → **Plugins**
 2. **Add from GitHub**
-3. `RENTSTAG/plugin`
+3. `RENTSTAG/mcp`
 4. Install **Rentstag**, then sign in
 
 </details>
@@ -18,7 +18,7 @@ Occupancy, buildings, units, contracts, and rent. Open your client, install the 
 Use Desktop, not Claude.ai.
 
 1. Settings → **Plugins** → **Add** → **Add marketplace**
-2. `RENTSTAG/plugin`
+2. `RENTSTAG/mcp`
 3. Sync, install **Rentstag**, then sign in
 
 </details>
@@ -27,7 +27,7 @@ Use Desktop, not Claude.ai.
 <summary>Claude Code</summary>
 
 ```
-claude plugin marketplace add RENTSTAG/plugin
+claude plugin marketplace add RENTSTAG/mcp
 claude plugin install rentstag
 ```
 
