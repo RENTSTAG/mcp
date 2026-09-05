@@ -11,7 +11,7 @@ All notable changes to this plugin will be documented here.
 
 ## 0.1.1
 
-- Added import, export, and troubleshoot skills.
+- Added import, export, and troubleshoot skills (user-facing MCP guidance only).
 
 ## 0.1.0 — initial release
 

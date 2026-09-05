@@ -57,7 +57,7 @@ For large spreadsheets or lease PDFs, `files_create_upload` mints a short-lived 
 - Tool denied — quote the denial from session; suggest switching org or asking an admin to upgrade the role.
 - Over batch limit — explain the cap and propose a split before committing.
 - Validation error — re-run `schema_describe`, fix enum/status values, re-analyse if needed.
-- Do not write to Convex or Appwrite directly. Imports go through MCP only.
+- Do not write outside these MCP tools. Imports go through MCP only.
 
 ## Checklist
 

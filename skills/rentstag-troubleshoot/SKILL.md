@@ -21,7 +21,7 @@ If a tool is denied, tell the user and stop. Do not retry with another write too
 | Occupancy / NOI / rent per m² looks invented or disagrees with the home screen | Counted units instead of the dashboard rollup | Call `metrics_get` with `metric` (`occupancy`, `noi`, `rentPerSquareMeter`, …) |
 | Rent charged 12 times (monthly rent as one-off payments) | Wrong tool — should be recurring | Use `rent_setup_recurring`; never loop `payments_upsert` for monthly rent |
 | Viewer cannot write | Expected — `org_viewer` has `company:content:read` only | User needs `org_member`+ for upserts and `import_commit` |
-| OAuth 401 on MCP | Sign-in expired, or AuthKit resource mismatch | Sign in again. Staff: check `WORKOS_AUTHKIT_ISSUER`, `MCP_RESOURCE_URL`, `WORKOS_CLIENT_ID` exist — never print values |
+| OAuth 401 on MCP | Sign-in expired | Sign in again from Cursor Settings → Plugins. Reconnect Rentstag if the prompt does not appear |
 | Financial statement tools fail or data looks wrong | Scope or contract id | `search_contract_financial_statement`, `get_contract_overview`; confirm company scope |
 | Import rejected | Missing `confirm: true`, batch over limit, or viewer role | Max 40 buildings / 200 units per commit; member+ required |
 | Invalid status / room type | Guessed enum | `schema_describe` — allowed values are listed there |
@@ -34,8 +34,8 @@ If a tool is denied, tell the user and stop. Do not retry with another write too
 
 ## Do not
 
-- Write to Convex or Appwrite directly. Portfolio loads go through `import_analyze` / `import_commit`.
-- Add a Cursor `sessionStart` MCP hook — discover/initialize instructions are the every-session channel.
+- Bypass MCP. Portfolio loads go through `import_analyze` / `import_commit`.
+- Guess write permissions or retry a denied tool under a different name.
 
 ## Escalation
 
