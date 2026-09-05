@@ -2,6 +2,11 @@
 
 All notable changes to this repository will be documented here.
 
+## 1.0.4
+
+- Setup now leads with the plugin (MCP plus skills) for Cursor, Claude, and ChatGPT.
+- Added a Claude marketplace so Claude Code can install the same plugin.
+
 ## 1.0.3
 
 - Logo is SVG (`assets/logo.svg`).

@@ -1,7 +1,7 @@
 {
   "name": "rentstag",
   "displayName": "Rentstag",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "minClientVersions": {
     "cursor": "3.13.0"
   },

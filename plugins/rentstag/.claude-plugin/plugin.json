@@ -1,0 +1,12 @@
+{
+  "name": "rentstag",
+  "description": "Ask Rentstag about occupancy, buildings, units, contracts, and rent. Includes MCP plus import, export, and troubleshoot skills.",
+  "version": "1.0.4",
+  "author": {
+    "name": "Rentstag",
+    "email": "michal@rentstag.com"
+  },
+  "homepage": "https://rentstag.com",
+  "repository": "https://github.com/RENTSTAG/mcp",
+  "license": "MIT"
+}

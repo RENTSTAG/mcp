@@ -1,6 +1,8 @@
 # Rentstag
 
-Connects this client to [Rentstag](https://rentstag.com) over MCP at `https://mcp.rentstag.com`.
+This plugin is the install: hosted MCP at `https://mcp.rentstag.com` plus the portfolio skills.
+
+Do not add `https://mcp.rentstag.com` as a bare MCP server unless you also install `skills/`.
 
 Sign in with WorkOS when prompted. There is no API key.
 

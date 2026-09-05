@@ -3,7 +3,7 @@
   "name": "rentstag/mcp",
   "title": "Rentstag",
   "description": "Ask Rentstag about occupancy, buildings, units, contracts, and rent.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "websiteUrl": "https://rentstag.com",
   "repository": {
     "url": "https://github.com/RENTSTAG/mcp",

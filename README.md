@@ -1,36 +1,28 @@
 # Rentstag MCP
 
-Hosted [Model Context Protocol](https://modelcontextprotocol.io/) server for occupancy, buildings, units, contracts, and rent.
+The Cursor plugin is the install. It wires MCP at `https://mcp.rentstag.com` and loads the four skills. Adding the MCP URL alone is incomplete.
 
-**URL:** `https://mcp.rentstag.com`
+Skills live in `plugins/rentstag/skills/` and are:
+
+- `rentstag-portfolio`
+- `rentstag-import-portfolio`
+- `rentstag-export-portfolio`
+- `rentstag-troubleshoot`
 
 Sign in with WorkOS when the client opens a browser. There is no API key.
 
-## Cursor
+## Cursor (recommended)
 
 1. Settings → **Plugins**
 2. **Add from GitHub**
 3. `RENTSTAG/mcp`
-4. Install **Rentstag**, then complete sign-in
+4. Install **Rentstag**, then sign in with WorkOS
 
-Or add the URL in Settings → **MCP**:
+## Cursor without the plugin
 
-```json
-{
-  "mcpServers": {
-    "rentstag": {
-      "type": "http",
-      "url": "https://mcp.rentstag.com"
-    }
-  }
-}
-```
+Use this only if you cannot install the plugin. You still need the skills.
 
-## Claude
-
-**Claude.ai:** Settings → Connectors → Add custom MCP → `https://mcp.rentstag.com`
-
-**Claude Code / Desktop:**
+Add the HTTP MCP server:
 
 ```json
 {
@@ -42,14 +34,34 @@ Or add the URL in Settings → **MCP**:
   }
 }
 ```
+
+Then copy all four folders from `plugins/rentstag/skills/` into the project's `.cursor/skills/` (or `.agents/skills/`).
+
+## Claude Code (recommended)
+
+```
+/plugin marketplace add RENTSTAG/mcp
+/plugin install rentstag@rentstag
+```
+
+Then sign in.
+
+## Claude.ai / Claude Desktop without the plugin
+
+Settings → Connectors → add `https://mcp.rentstag.com`.
+
+Then upload each folder in `plugins/rentstag/skills` as skills (or attach the `SKILL.md` files as project instructions).
 
 ## ChatGPT
 
-Developer Mode → MCP → add `https://mcp.rentstag.com` → complete sign-in.
+Do not add the MCP URL alone.
+
+1. Developer Mode → MCP → `https://mcp.rentstag.com` → sign in
+2. Plugins → Skills → upload each folder from `plugins/rentstag/skills`
 
 ## Other MCP clients
 
-Use Streamable HTTP at `https://mcp.rentstag.com`. Server card: [`server.json`](./server.json) and `https://mcp.rentstag.com/.well-known/mcp.json`.
+Use Streamable HTTP at `https://mcp.rentstag.com` plus the four skills as instructions. Server card: [`server.json`](./server.json) and `https://mcp.rentstag.com/.well-known/mcp.json`.
 
 ## What you can ask
 
