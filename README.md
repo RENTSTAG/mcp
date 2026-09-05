@@ -1,28 +1,38 @@
-# Rentstag MCP
+# Rentstag
 
-The Cursor plugin is the install. It wires MCP at `https://mcp.rentstag.com` and loads the four skills. Adding the MCP URL alone is incomplete.
+Plugin for Cursor and Claude Code. Occupancy, buildings, units, contracts, and rent.
 
-Skills live in `plugins/rentstag/skills/` and are:
+## Cursor
+
+1. Settings → **Plugins**
+2. **Add from GitHub**
+3. `RENTSTAG/mcp`
+4. Install **Rentstag**, then sign in
+
+## Claude Code
+
+```
+claude plugin marketplace add RENTSTAG/mcp
+claude plugin install rentstag
+```
+
+Then sign in.
+
+<details>
+<summary>Manual setup</summary>
+
+Use this only if the client has no plugin. You need both the MCP server and the skills. The URL alone is incomplete.
+
+MCP: Streamable HTTP at `https://mcp.rentstag.com`. Server card: [`server.json`](./server.json).
+
+Skills (copy or upload every folder in [`plugins/rentstag/skills`](plugins/rentstag/skills)):
 
 - `rentstag-portfolio`
 - `rentstag-import-portfolio`
 - `rentstag-export-portfolio`
 - `rentstag-troubleshoot`
 
-Sign in with WorkOS when the client opens a browser. There is no API key.
-
-## Cursor (recommended)
-
-1. Settings → **Plugins**
-2. **Add from GitHub**
-3. `RENTSTAG/mcp`
-4. Install **Rentstag**, then sign in with WorkOS
-
-## Cursor without the plugin
-
-Use this only if you cannot install the plugin. You still need the skills.
-
-Add the HTTP MCP server:
+**Cursor:** add the MCP URL, then copy the skill folders into `.cursor/skills/` (or `.agents/skills/`).
 
 ```json
 {
@@ -35,33 +45,11 @@ Add the HTTP MCP server:
 }
 ```
 
-Then copy all four folders from `plugins/rentstag/skills/` into the project's `.cursor/skills/` (or `.agents/skills/`).
+**Claude.ai / Claude Desktop:** Settings → Connectors → add the MCP URL, then upload each skill folder (or attach the `SKILL.md` files as project instructions).
 
-## Claude Code (recommended)
+**ChatGPT:** Developer Mode → MCP → add the URL and sign in, then Plugins → Skills → upload each skill folder.
 
-```
-claude plugin marketplace add RENTSTAG/mcp
-claude plugin install rentstag
-```
-
-Then sign in.
-
-## Claude.ai / Claude Desktop without the plugin
-
-Settings → Connectors → add `https://mcp.rentstag.com`.
-
-Then upload each folder in `plugins/rentstag/skills` as skills (or attach the `SKILL.md` files as project instructions).
-
-## ChatGPT
-
-Do not add the MCP URL alone.
-
-1. Developer Mode → MCP → `https://mcp.rentstag.com` → sign in
-2. Plugins → Skills → upload each folder from `plugins/rentstag/skills`
-
-## Other MCP clients
-
-Use Streamable HTTP at `https://mcp.rentstag.com` plus the four skills as instructions. Server card: [`server.json`](./server.json) and `https://mcp.rentstag.com/.well-known/mcp.json`.
+</details>
 
 ## What you can ask
 
