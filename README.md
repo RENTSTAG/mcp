@@ -1,15 +1,30 @@
 # Rentstag
 
-Plugin for Cursor and Claude Code. Occupancy, buildings, units, contracts, and rent.
+Occupancy, buildings, units, contracts, and rent. Open your client, install the plugin, then sign in.
 
-## Cursor
+<details>
+<summary>Cursor</summary>
 
 1. Settings → **Plugins**
 2. **Add from GitHub**
 3. `RENTSTAG/mcp`
 4. Install **Rentstag**, then sign in
 
-## Claude Code
+</details>
+
+<details>
+<summary>Claude Desktop</summary>
+
+Use Desktop, not Claude.ai.
+
+1. Settings → **Plugins** → **Add** → **Add marketplace**
+2. `RENTSTAG/mcp`
+3. Sync, install **Rentstag**, then sign in
+
+</details>
+
+<details>
+<summary>Claude Code</summary>
 
 ```
 claude plugin marketplace add RENTSTAG/mcp
@@ -18,36 +33,31 @@ claude plugin install rentstag
 
 Then sign in.
 
+</details>
+
 <details>
-<summary>Manual setup</summary>
+<summary>Claude.ai</summary>
 
-Use this only if the client has no plugin. You need both the MCP server and the skills. The URL alone is incomplete.
+Settings → Connectors → add `https://mcp.rentstag.com`.
 
-MCP: Streamable HTTP at `https://mcp.rentstag.com`. Server card: [`server.json`](./server.json).
+Then upload each folder in [`plugins/rentstag/skills`](plugins/rentstag/skills) (or attach the `SKILL.md` files as project instructions). The URL alone is incomplete.
 
-Skills (copy or upload every folder in [`plugins/rentstag/skills`](plugins/rentstag/skills)):
+</details>
 
-- `rentstag-portfolio`
-- `rentstag-import-portfolio`
-- `rentstag-export-portfolio`
-- `rentstag-troubleshoot`
+<details>
+<summary>ChatGPT</summary>
 
-**Cursor:** add the MCP URL, then copy the skill folders into `.cursor/skills/` (or `.agents/skills/`).
+1. Developer Mode → MCP → `https://mcp.rentstag.com` → sign in
+2. Plugins → Skills → upload each folder in [`plugins/rentstag/skills`](plugins/rentstag/skills)
 
-```json
-{
-  "mcpServers": {
-    "rentstag": {
-      "type": "http",
-      "url": "https://mcp.rentstag.com"
-    }
-  }
-}
-```
+The URL alone is incomplete.
 
-**Claude.ai / Claude Desktop:** Settings → Connectors → add the MCP URL, then upload each skill folder (or attach the `SKILL.md` files as project instructions).
+</details>
 
-**ChatGPT:** Developer Mode → MCP → add the URL and sign in, then Plugins → Skills → upload each skill folder.
+<details>
+<summary>Other clients</summary>
+
+Streamable HTTP at `https://mcp.rentstag.com` plus every folder in [`plugins/rentstag/skills`](plugins/rentstag/skills). Server card: [`server.json`](./server.json). The URL alone is incomplete.
 
 </details>
 
