@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "rentstag": {
+      "type": "http",
       "url": "https://mcp.rentstag.com"
     }
   }

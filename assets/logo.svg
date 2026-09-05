@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="Rentstag">
+  <rect width="192" height="192" rx="36" fill="#ffffff"/>
+  <g transform="translate(32 32) scale(2)">
+    <rect width="64" height="64" rx="18" fill="#ef5a3c"/>
+    <path d="M17 48V26l15-12 15 12v22H36V36h-8v12H17Z" fill="#fff8ed"/>
+  </g>
+</svg>
