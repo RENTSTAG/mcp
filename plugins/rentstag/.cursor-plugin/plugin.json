@@ -5,7 +5,7 @@
   "minClientVersions": {
     "cursor": "3.13.0"
   },
-  "description": "Ask Rentstag about occupancy, buildings, units, contracts, and rent.",
+  "description": "Ask Rentstag about occupancy, buildings, units, contracts, and rent. Plugin includes MCP and skills.",
   "author": {
     "name": "Rentstag",
     "email": "michal@rentstag.com"

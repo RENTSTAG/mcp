@@ -4,8 +4,8 @@ All notable changes to this plugin will be documented here.
 
 ## 1.0.4
 
-- Setup now leads with the plugin (MCP plus skills) for Cursor, Claude, and ChatGPT.
-- Added Claude marketplace packaging.
+- Setup leads with this plugin so MCP is never used without the skills in `skills/`.
+- Claude Code can install the same plugin from the repo marketplace.
 
 ## 1.0.3
 
