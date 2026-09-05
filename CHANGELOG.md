@@ -2,6 +2,10 @@
 
 All notable changes to this repository will be documented here.
 
+## 1.0.3
+
+- Logo is SVG (`assets/logo.svg`).
+
 ## 1.0.2
 
 - Cursor GitHub install uses a marketplace manifest (`plugins/rentstag`), which is what Add from GitHub expects.

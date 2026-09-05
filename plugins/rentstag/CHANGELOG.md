@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.3
+
+- Logo is SVG (`assets/logo.svg`).
+
 ## 1.0.2
 
 - Shipped as `plugins/rentstag` in a Cursor marketplace repo so Add from GitHub can parse the listing.
