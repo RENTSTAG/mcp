@@ -1,0 +1,14 @@
+{
+  "name": "rentstag",
+  "version": "0.1.0",
+  "description": "Ask Rentstag about occupancy, buildings, units, contracts, and rent.",
+  "author": {
+    "name": "Rentstag",
+    "email": "michal@rentstag.com"
+  },
+  "homepage": "https://rentstag.com",
+  "repository": "https://github.com/RENTSTAG/mcp",
+  "license": "MIT",
+  "keywords": ["rentstag", "mcp", "property", "portfolio", "real-estate"],
+  "logo": "assets/logo.png"
+}
