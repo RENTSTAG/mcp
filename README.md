@@ -40,8 +40,8 @@ Then copy all four folders from `plugins/rentstag/skills/` into the project's `.
 ## Claude Code (recommended)
 
 ```
-/plugin marketplace add RENTSTAG/mcp
-/plugin install rentstag@rentstag
+claude plugin marketplace add RENTSTAG/mcp
+claude plugin install rentstag
 ```
 
 Then sign in.
