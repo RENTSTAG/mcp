@@ -1,6 +1,6 @@
 # Rentstag
 
-Occupancy, buildings, units, contracts, and rent. Open your client, install the plugin, then sign in.
+Rentstag is software for landlords. Sign in from your client and work from your rental portfolio.
 
 <details>
 <summary>Cursor</summary>
@@ -63,7 +63,7 @@ Streamable HTTP at `https://mcp.rentstag.com` plus every folder in [`plugins/ren
 
 ## What you can ask
 
-Occupancy, buildings, units, contracts, and rent in the signed-in organisation. Import a pasted spreadsheet. Export a read-only portfolio snapshot.
+Occupancy, buildings, units, contracts, and rent in the signed-in organisation. Import a pasted spreadsheet. Export a read-only portfolio snapshot. On the hosted server, use `suggest_tools` when you are not sure which tool fits (see the troubleshoot skill).
 
 Writes need an explicit yes. Viewers can read and analyse; members can commit.
 
