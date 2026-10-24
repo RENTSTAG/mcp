@@ -1,7 +1,46 @@
 # Rentstag
 
-This plugin is the install. It adds the hosted MCP server at https://mcp.rentstag.com and the portfolio skills in `skills/`.
+Rentstag is software for landlords. Sign in and Cursor can work from your rental portfolio.
 
-Do not add `https://mcp.rentstag.com` as a bare MCP server unless you also install `skills/`.
+Site: [rentstag.com](https://rentstag.com)
 
-Sign in with WorkOS when prompted. There is no API key.
+Install from GitHub in Cursor. Do not paste `mcp.json` by hand.
+
+## Install
+
+1. Cursor → **Settings → Plugins**
+2. **Add from GitHub**
+3. `RENTSTAG/mcp`
+4. Sign in with WorkOS when Cursor opens the browser
+
+That adds this server:
+
+```json
+{
+  "mcpServers": {
+    "rentstag": {
+      "type": "http",
+      "url": "https://mcp.rentstag.com"
+    }
+  }
+}
+```
+
+## Skills
+
+Cursor loads these with the plugin:
+
+| Skill | When |
+| --- | --- |
+| `rentstag-portfolio` | Any Rentstag MCP work — session first, no guessed writes |
+| `rentstag-import-portfolio` | Pasted spreadsheet / CSV / JSON into Manage |
+| `rentstag-export-portfolio` | Read-only snapshot of buildings, units, contracts, rent |
+| `rentstag-troubleshoot` | Tool failures, OAuth, occupancy or rent looking wrong |
+
+## What this repo is
+
+A public Cursor plugin. The MCP server itself stays in the private Rentstag app. This repo only publishes the install card and the skills Cursor should follow.
+
+## Local
+
+For the Rentstag monorepo, keep using `http://localhost:2172/` in that workspace. This plugin is for production.
