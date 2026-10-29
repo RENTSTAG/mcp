@@ -27,6 +27,12 @@ Use Desktop, not Claude.ai.
 <summary>Claude Code</summary>
 
 ```
+/plugin install rentstag --marketplace RENTSTAG/mcp
+```
+
+On older versions:
+
+```
 claude plugin marketplace add RENTSTAG/mcp
 claude plugin install rentstag
 ```
@@ -66,6 +72,10 @@ Streamable HTTP at `https://mcp.rentstag.com` plus every folder in [`plugins/ren
 Occupancy, buildings, units, contracts, and rent in the signed-in organisation. Import a pasted spreadsheet. Export a read-only portfolio snapshot. On the hosted server, use `suggest_tools` when you are not sure which tool fits (see the troubleshoot skill).
 
 Writes need an explicit yes. Viewers can read and analyse; members can commit.
+
+## Privacy
+
+[rentstag.com/privacy](https://rentstag.com/privacy)
 
 ## License
 
