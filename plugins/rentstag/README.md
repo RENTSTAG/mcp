@@ -2,7 +2,7 @@
 
 Rentstag is software for landlords. Sign in and your AI client can work from your rental portfolio.
 
-Site: [rentstag.com](https://rentstag.com) · Privacy: [rentstag.com/privacy](https://rentstag.com/privacy)
+Site: [rentstag.com](https://rentstag.com)
 
 ## Install
 
@@ -49,7 +49,7 @@ Do not paste the MCP config by hand. The plugin adds this server:
 
 ## Data
 
-The plugin connects to the hosted Rentstag MCP server at `https://mcp.rentstag.com`. You sign in with your Rentstag account, and the server only reads or writes data in organisations your account can access. Writes need an explicit yes. See the [privacy policy](https://rentstag.com/privacy).
+The plugin connects to the hosted Rentstag MCP server at `https://mcp.rentstag.com`. You sign in with your Rentstag account, and the server only reads or writes data in organisations your account can access. Writes need an explicit yes. Privacy: [rentstag.com](https://rentstag.com/).
 
 ## What this repo is
 

@@ -75,7 +75,7 @@ Writes need an explicit yes. Viewers can read and analyse; members can commit.
 
 ## Privacy
 
-[rentstag.com/privacy](https://rentstag.com/privacy)
+[rentstag.com](https://rentstag.com/)
 
 ## License
 

@@ -2,7 +2,7 @@
 
 ## 1.2.0
 
-Claude plugin directory readiness: `privacyPolicyUrl` in `.claude-plugin/plugin.json`, Claude manifest version aligned with Cursor and `server.json`, one-step Claude Code install line, client-neutral plugin README with a privacy link and data note.
+Claude plugin directory readiness: `privacyPolicyUrl` in `.claude-plugin/plugin.json`, Claude manifest version aligned with Cursor and `server.json`, one-step Claude Code install line, client-neutral plugin README with a privacy link to rentstag.com and data note.
 
 ## 1.1.0
 

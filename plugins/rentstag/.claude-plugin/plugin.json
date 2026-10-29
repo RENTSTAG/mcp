@@ -7,7 +7,7 @@
     "email": "michal@rentstag.com"
   },
   "homepage": "https://rentstag.com",
-  "privacyPolicyUrl": "https://rentstag.com/privacy",
+  "privacyPolicyUrl": "https://rentstag.com/",
   "repository": "https://github.com/RENTSTAG/mcp",
   "license": "MIT"
 }
