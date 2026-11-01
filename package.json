@@ -1,0 +1,7 @@
+{
+  "name": "@rentstag/mcp-plugin-repo",
+  "private": true,
+  "scripts": {
+    "validate-plugin": "node scripts/validate-plugin.mjs"
+  }
+}

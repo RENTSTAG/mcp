@@ -2,7 +2,7 @@
 
 ## 1.3.0
 
-Document MCP Events in the root and plugin READMEs (subscribe, list, unsubscribe; client-neutral). Bump plugin and server card to 1.3.0. Run `node scripts/validate-plugin.mjs` on pull requests to `main`.
+Document MCP Events in the root and plugin READMEs (subscribe, list, unsubscribe; client-neutral). Bump plugin and server card to 1.3.0.
 
 ## 1.2.0
 
