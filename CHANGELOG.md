@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0
+
+Document MCP Events in the root and plugin READMEs (subscribe, list, unsubscribe; client-neutral). Bump plugin and server card to 1.3.0. Run `node scripts/validate-plugin.mjs` on pull requests to `main`.
+
 ## 1.2.0
 
 Claude plugin directory readiness: `privacyPolicyUrl` in `.claude-plugin/plugin.json`, Claude manifest version aligned with Cursor and `server.json`, one-step Claude Code install line, client-neutral plugin README with a privacy link to rentstag.com and data note.

@@ -73,6 +73,10 @@ Occupancy, buildings, units, contracts, and rent in the signed-in organisation. 
 
 Writes need an explicit yes. Viewers can read and analyse; members can commit.
 
+## MCP Events
+
+When operators enable MCP Events on the hosted server (`MCP_EVENTS_ENABLED=true` or the PostHog `mcp-events` flag; off by default), signed-in users turn portfolio events on with `events_subscribe` or `events/subscribe`, list them with `events_list`, and turn them off with `events_unsubscribe` or `events_unsubscribe_all`. ChatGPT, the Vercel AI SDK, and other MCP clients can subscribe to portfolio webhooks (for example payment events) at `https://mcp.rentstag.com` — the same URL as the rest of the server.
+
 ## Privacy
 
 [rentstag.com](https://rentstag.com/)
