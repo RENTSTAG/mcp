@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0
+
+README: MCP Events (`events_subscribe` / `events/subscribe`, `events_list`, `events_unsubscribe`, `events_unsubscribe_all`); plugin version 1.3.0.
+
 ## 1.2.0
 
 Add `privacyPolicyUrl`, align the Claude manifest version, and make the README client-neutral with Claude install steps and a privacy link.
