@@ -38,6 +38,10 @@ Do not paste the MCP config by hand. The plugin adds this server:
 }
 ```
 
+## MCP Events
+
+The hosted server exposes MCP Events when operators turn them on (`MCP_EVENTS_ENABLED=true` or the PostHog `mcp-events` flag; off by default). Landlords and agents subscribe with `events_subscribe` (or `events/subscribe` on clients that support MCP Events natively), list active subscriptions with `events_list`, and turn them off with `events_unsubscribe` or `events_unsubscribe_all`. Webhook delivery needs a callback URL and a `whsec_` secret; poll mode does not. ChatGPT, the Vercel AI SDK, and other MCP clients can receive portfolio webhooks through the same `https://mcp.rentstag.com` server — no second MCP URL.
+
 ## Skills
 
 | Skill | When |
