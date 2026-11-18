@@ -27,7 +27,7 @@ If a tool is denied, tell the user and stop. Do not retry with another write too
 | Import rejected | Missing `confirm: true`, batch over limit, or viewer role | Max 40 buildings / 200 units per commit; member+ required |
 | Invalid status / room type | Guessed enum | `schema_describe` — allowed values are listed there |
 | "Rentstag MCP limit reached. Try again in N seconds." | Per-person or per-organisation limit hit; heavy tools count as several calls | Wait the stated seconds before any further call. Do not loop. An organisation admin can check usage with `mcp_usage_get` |
-| Admin asks who changed a record, or how much the team uses the MCP | Admin-only tools | `get_change_history` (dates, optional `table` + `recordId`, `limit` up to 500; narrow the dates when `isTruncated` is true) and `mcp_usage_get` (dates). Only organisation admins see them |
+| Admin asks who changed a record, or how much the team uses the MCP | Admin-only tools | `get_change_history` (dates up to 5 years, optional `contractId` or `table` + `recordId`, `limit` up to 500, newest first; narrow the dates when `isTruncated` is true) and `mcp_usage_get` (dates). Only organisation admins see them |
 
 ## Security
 

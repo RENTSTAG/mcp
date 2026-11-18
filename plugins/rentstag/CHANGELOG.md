@@ -2,7 +2,7 @@
 
 ## 1.4.0
 
-README: limits and admin tools (`mcp_usage_get`, `get_change_history`). Troubleshoot skill: limit message and admin tools. Plugin version 1.4.0.
+README: limits and admin tools (`mcp_usage_get`, `get_change_history` with `contractId`, newest first, up to 5 years, and how each change was made). Troubleshoot skill: limit message and admin tools. Plugin version 1.4.0.
 
 ## 1.3.0
 
