@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0
+
+README: limits and admin tools (`mcp_usage_get`, `get_change_history`). Troubleshoot skill: limit message and admin tools. Plugin version 1.4.0.
+
 ## 1.3.0
 
 README: MCP Events (`events_subscribe` / `events/subscribe`, `events_list`, `events_unsubscribe`, `events_unsubscribe_all`); plugin version 1.3.0.

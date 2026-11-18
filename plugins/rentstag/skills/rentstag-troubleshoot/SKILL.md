@@ -13,7 +13,7 @@ Map symptoms to likely causes using session context and MCP tools. Fix guidance 
 2. `suggest_tools` — when the request does not name a tool. Pass the user's words unchanged. Call the highest probabilities first. Call several when several are high. Try a low probability only after the stronger tools do not answer.
 3. `schema_describe` — when the issue involves invalid enums (contract state, payment status, room type, recurring period).
 
-If a tool is denied, tell the user and stop. Do not retry with another write tool.
+If a tool is denied, tell the user and stop. Do not retry with another write tool. If a tool says the MCP limit was reached, wait the stated time before calling anything again.
 
 ## Symptom map
 
@@ -26,6 +26,8 @@ If a tool is denied, tell the user and stop. Do not retry with another write too
 | Financial statement tools fail or data looks wrong | Scope or contract id | `search_contract_financial_statement`, `get_contract_overview`; confirm company scope |
 | Import rejected | Missing `confirm: true`, batch over limit, or viewer role | Max 40 buildings / 200 units per commit; member+ required |
 | Invalid status / room type | Guessed enum | `schema_describe` — allowed values are listed there |
+| "Rentstag MCP limit reached. Try again in N seconds." | Per-person or per-organisation limit hit; heavy tools count as several calls | Wait the stated seconds before any further call. Do not loop. An organisation admin can check usage with `mcp_usage_get` |
+| Admin asks who changed a record, or how much the team uses the MCP | Admin-only tools | `get_change_history` (dates, optional `table` + `recordId`) and `mcp_usage_get` (dates). Only organisation admins see them |
 
 ## Security
 

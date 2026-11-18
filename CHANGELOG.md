@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0
+
+Document the shared MCP limits (per person and per organisation, heavier tools count more) and the limit message, and the two admin-only tools `mcp_usage_get` and `get_change_history`. Troubleshoot skill: wait on the limit message, route admin usage and history questions. Bump plugin and server card to 1.4.0. The tools and limits ship with the hosted server release from rentstag-app PRs 178 and 182.
+
 ## 1.3.0
 
 Document MCP Events in the root and plugin READMEs (subscribe, list, unsubscribe; client-neutral). Bump plugin and server card to 1.3.0.
