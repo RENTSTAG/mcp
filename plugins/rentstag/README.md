@@ -51,7 +51,7 @@ Every tool call counts toward shared limits: 60 a minute and 3,000 a day per per
 | Tool | What it does |
 | --- | --- |
 | `mcp_usage_get` | MCP usage between two dates (up to 366 days): calls and units per day, tool, person and client app, calls that hit a limit, and the current limits. |
-| `get_change_history` | Who changed what and when between two dates, optionally for one record (`table` + `recordId`). Oldest first, up to 500 entries. Personal data such as addresses, emails and account numbers is masked. |
+| `get_change_history` | Who changed what and when between two dates, optionally for one record (`table` + `recordId`). Oldest first, 100 entries unless you pass `limit` (up to 500); `isTruncated` says there are more. Personal data such as addresses, emails and account numbers is masked. |
 
 Both are read-only and only listed for organisation admins.
 
