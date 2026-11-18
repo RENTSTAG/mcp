@@ -42,6 +42,19 @@ Do not paste the MCP config by hand. The plugin adds this server:
 
 The hosted server exposes MCP Events when operators turn them on (`MCP_EVENTS_ENABLED=true` or the PostHog `mcp-events` flag; off by default). Landlords and agents subscribe with `events_subscribe` (or `events/subscribe` on clients that support MCP Events natively), list active subscriptions with `events_list`, and turn them off with `events_unsubscribe` or `events_unsubscribe_all`. Webhook delivery needs a callback URL and a `whsec_` secret; poll mode does not. ChatGPT, the Vercel AI SDK, and other MCP clients can receive portfolio webhooks through the same `https://mcp.rentstag.com` server — no second MCP URL.
 
+## Limits
+
+Every tool call counts toward shared limits: 60 a minute and 3,000 a day per person, 300 a minute and 20,000 a day per organisation. Heavier tools count as more than one call: `generate_document`, `import_analyze` and `import_commit` count 5, the leak check tools 3, and `get_change_history` 10. Over a limit, the tool returns "Rentstag MCP limit reached. Try again in N seconds." Wait that long before calling again.
+
+## For organisation admins
+
+| Tool | What it does |
+| --- | --- |
+| `mcp_usage_get` | MCP usage between two dates (up to 366 days): calls and units per day, tool, person and client app, calls that hit a limit, and the current limits. |
+| `get_change_history` | Who changed what and when between two dates (up to 5 years), for the whole organisation, one contract with its payments, tenant, notices and rent terms (`contractId`), or one record (`table` + `recordId`). Newest first, 100 entries unless you pass `limit` (up to 500); `isTruncated` says there are older ones. Each entry says how it was made: `source` (`web` for Manage, `mcp` for an AI tool, `system` for automatic jobs), `device` (browser and system, Manage only) and `client` (the AI tool's name). `seals` lists the fingerprints of the sealed files the entries came from. Personal data such as addresses, emails and account numbers is masked. |
+
+Both are read-only and only listed for organisation admins.
+
 ## Skills
 
 | Skill | When |
